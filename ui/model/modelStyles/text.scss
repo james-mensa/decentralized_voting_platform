@@ -1,0 +1,66 @@
+
+
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url("/assets/fonts/RobotoCondensed-Light.ttf");
+}
+
+@font-face {
+    font-family: 'DefaultFont';
+    src: url("/assets/fonts/RobotoCondensed-Regular.ttf");
+}
+
+
+@font-face {
+    font-family: 'HeaderFont';
+    src: url("/assets/fonts/Aileron-SemiBold.otf");
+}
+
+
+
+.h1{
+
+    font-family: "HeaderFont";
+    font-size: 20px;
+
+
+
+}
+
+.h2{
+    font-family: "HeaderFont";
+    font-size: 17px;
+
+
+
+}
+
+.h3{
+
+    font-family: "HeaderFont";
+    font-size: 15px;
+  
+
+
+}
+
+
+.p1{
+
+    font-family: "DefaultFont";
+    font-size: 14px;
+
+}
+.p2{
+
+    font-family: "DefaultFont";
+    font-size: 13px;
+
+}
+
+.label{
+
+    font-family: "HeaderFont";
+    font-size:13px;
+   
+}

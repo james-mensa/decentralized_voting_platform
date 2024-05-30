@@ -4,8 +4,8 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-start-rgb:9, 9, 21;
+  --background-end-rgb: 6, 6, 16;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -30,4 +30,40 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+
+
+
+.trybtn{
+  display: flex;
+  flex-direction:column;
+  padding:15px;
+  width:200px;
+  height:80px;
+  opacity:0.3;
+  border:1px solid #080c21;
+  border-radius:25px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    #1b4a4a
+   
+  ) #42fcfc
+  ;
+
+  transition: 0.4s ease-in-out;
+}
+
+.trybtn:hover{
+transition: 0.4s ease-in-out;
+opacity:1;
+cursor:pointer
+}
+
+
+.trybtn h1{
+
+  font-weight: bold;
+  font-size:18px
 }

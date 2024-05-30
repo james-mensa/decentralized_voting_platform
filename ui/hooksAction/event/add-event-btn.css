@@ -1,0 +1,67 @@
+
+.btn
+{
+    width: 100px!important;
+    height: 100px!important;
+    background-color: #fafafa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2em;
+    margin-right: 1em;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 50px!important;
+    position:fixed!important;
+
+}
+
+#ig
+{
+    color: #ff5f40;
+    text-shadow: 0 0 30px #ff5f40;
+}
+
+.btn.ig-btn
+{
+    box-shadow: 0 20px 20px -17px rgba(18, 18, 33,0.3);
+}
+.btn.ig-btn:hover
+{
+    transform: scale(1.2);
+    box-shadow: 0 30px 45px -15px rgba(18, 18, 33,0.3);
+}
+
+
+@keyframes anim-glow {
+	0% {
+		box-shadow: 0 0 rgba(#61EF61, 1);
+	}
+	100% {
+		box-shadow: 0 0 10px 8px transparent;
+		border-width: 2px;
+	}
+}
+
+
+
+.icon	{
+	border-radius: 50%;
+	border: 2px solid #61EF61;
+	width: 10px;
+	height: 10px;
+	text-align: center;
+	position: relative;
+	animation: anim-glow 2s ease infinite;
+		
+
+}
+.btn {
+    border-radius: 50%;
+    border: 2px solid #61EF61;
+    width: 2px;
+    height: 2px;
+    display: inline-block;
+    vertical-align: 6px;
+    background-color: #61EF61;
+}

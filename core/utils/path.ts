@@ -1,0 +1,1 @@
+export const IPFS_GATEWAY_URL="https://amber-managing-angelfish-602.mypinata.cloud/ipfs/"

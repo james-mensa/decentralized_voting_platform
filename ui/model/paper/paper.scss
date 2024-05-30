@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'DefaultFont';
+    src: url("/assets/fonts/RobotoCondensed-Regular.ttf");
+}
+
+
+
+
+@font-face {
+    font-family: 'HeaderFont';
+    src: url("/assets/fonts/Aileron-SemiBold.otf");
+}
+
+
+
+.paper{
+    font-family:'DefaultFont' ;
+    border-width: 1px; 
+    border-style: solid;
+    border-radius: 3px;
+    width: 100%;
+    padding: 4px;
+   
+   
+    
+    
+}
+

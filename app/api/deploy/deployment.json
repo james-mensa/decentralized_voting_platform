@@ -1,0 +1,65 @@
+{
+  "0xE9061F92bA9A3D9ef3f4eb8456ac9E552B3Ff5C8": {
+    "abi": [
+      "constructor(bytes32[] proposalNames, address[] parties)",
+      "function candidates(uint256) view returns (bytes32 name, uint256 voteCount)",
+      "function delegate(address to)",
+      "function getCandidateRanking() view returns (bytes32[] candidateNames, uint256[] voteCounts)",
+      "function getCandidates() view returns (bytes32[] candidateNames, uint256[] voteCounts)",
+      "function getParties() view returns (address[] parties)",
+      "function getVoterDetails(address voter) view returns (bool voted_, address delegate_, uint256 vote_, address[] authorizedBy, uint256 weight_)",
+      "function giveRightToVote(address voter)",
+      "function poolParties(uint256) view returns (address)",
+      "function vote(uint256 candidate)",
+      "function voters(address) view returns (bool voted, address delegate, uint256 vote, uint256 weight)",
+      "function winningProposal() view returns (uint256 winningProposal_, uint256 totalVotes)"
+    ],
+    "address": "0xE9061F92bA9A3D9ef3f4eb8456ac9E552B3Ff5C8",
+    "creator": "0x8626f6940E2eb28930eFb4CeF49B2d1F2C9C1199",
+    "timeStamp": 1713361832,
+    "blockNumber": 15,
+    "txhash": "0x5ecf79ac171d1fdc04f69bde0f26cc15664e535ab0a346ce836a829bc6c77724"
+  },
+  "0xA7c8B0D74b68EF10511F27e97c379FB1651e1eD2": {
+    "abi": [
+      "constructor(bytes32[] proposalNames, address[] parties)",
+      "function candidates(uint256) view returns (bytes32 name, uint256 voteCount)",
+      "function delegate(address to)",
+      "function getCandidateRanking() view returns (bytes32[] candidateNames, uint256[] voteCounts)",
+      "function getCandidates() view returns (bytes32[] candidateNames, uint256[] voteCounts)",
+      "function getParties() view returns (address[] parties)",
+      "function getVoterDetails(address voter) view returns (bool voted_, address delegate_, uint256 vote_, address[] authorizedBy, uint256 weight_)",
+      "function giveRightToVote(address voter)",
+      "function poolParties(uint256) view returns (address)",
+      "function vote(uint256 candidate)",
+      "function voters(address) view returns (bool voted, address delegate, uint256 vote, uint256 weight)",
+      "function winningProposal() view returns (uint256 winningProposal_, uint256 totalVotes)"
+    ],
+    "address": "0xA7c8B0D74b68EF10511F27e97c379FB1651e1eD2",
+    "creator": "0x8626f6940E2eb28930eFb4CeF49B2d1F2C9C1199",
+    "timeStamp": 1713361845,
+    "blockNumber": 16,
+    "txhash": "0xc95bfe815c87899ef917d07f54750c7d7ee567032a837aa5abba1df038002f23"
+  },
+  "0xC92B72ecf468D2642992b195bea99F9B9BB4A838": {
+    "abi": [
+      "constructor(bytes32[] proposalNames, address[] parties)",
+      "function candidates(uint256) view returns (bytes32 name, uint256 voteCount)",
+      "function delegate(address to)",
+      "function getCandidateRanking() view returns (bytes32[] candidateNames, uint256[] voteCounts)",
+      "function getCandidates() view returns (bytes32[] candidateNames, uint256[] voteCounts)",
+      "function getParties() view returns (address[] parties)",
+      "function getVoterDetails(address voter) view returns (bool voted_, address delegate_, uint256 vote_, address[] authorizedBy, uint256 weight_)",
+      "function giveRightToVote(address voter)",
+      "function poolParties(uint256) view returns (address)",
+      "function vote(uint256 candidate)",
+      "function voters(address) view returns (bool voted, address delegate, uint256 vote, uint256 weight)",
+      "function winningProposal() view returns (uint256 winningProposal_, uint256 totalVotes)"
+    ],
+    "address": "0xC92B72ecf468D2642992b195bea99F9B9BB4A838",
+    "creator": "0x8626f6940E2eb28930eFb4CeF49B2d1F2C9C1199",
+    "timeStamp": 1713362411,
+    "blockNumber": 17,
+    "txhash": "0xf348053afedd6aa40953ef2682ae454a14ee38ee8569cc12749ecfa7ee262a64"
+  }
+}

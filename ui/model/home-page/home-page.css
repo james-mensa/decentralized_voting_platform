@@ -1,0 +1,79 @@
+
+:root {
+    --foreground-rgb: 0, 0, 0;
+    --btn-start-rgb:188, 231, 249;
+    --btn-end-rgb: 159, 206, 226;
+  }
+  
+
+
+
+.landing-page{
+    color:rgb(229, 236, 242);
+    margin-top: 80px;    
+}
+
+.landing-page-layout{
+ 
+    min-height: 400px;
+    align-items: center;
+    padding:20px;
+}
+
+.landing-page-content{
+    width: 40%;
+}
+.landing-page-header{
+    font-size: 40px;
+}
+.landing-page-subtitle{
+    display: inline-block; /* This makes the div take the width of its content */
+    width: auto; /* Allow the width to adjust based on content */
+    font-size: 40px;
+    border: 1px solid rgb(108, 210, 254);
+    border-radius: 5px;
+    color:  rgb(90, 199, 246);
+    padding:3px 10px;
+    font-weight: bold;
+}
+
+.landing-page-typography{
+    padding: 10px 5px;
+    font-size: 15px;
+    color:  rgb(159, 206, 226);
+    color:  rgb(188, 231, 249);
+}
+
+.landing-page-btn{
+width: 150px;
+    background: linear-gradient(
+        to left,
+        transparent,
+        rgb(var(--btn-end-rgb))
+      )
+      rgb(var(--btn-start-rgb));
+      color: rgb(1, 4, 16);
+      font-weight: bold;
+      border-radius: 5px;
+      padding: 5px 8px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      margin-left: 5px;
+      margin-top: 10px;
+      cursor: pointer;
+}
+.landing-page-btn:hover{
+ 
+        background: linear-gradient(
+            to left,
+            transparent,
+          rgb(159, 206, 226)  
+          )
+          rgb(116, 186, 216);
+          color: rgb(4, 11, 38);
+
+          transition: 0.5s ease-in-out;
+          box-shadow: 2px 2px 10px 2px   rgb(7, 33, 44);
+    }

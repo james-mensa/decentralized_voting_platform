@@ -1,0 +1,74 @@
+@mixin hoverBtn($bcolor: "dark", $color: "white") {
+    color: $color;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 5px 10px;
+    text-align: center;
+    transition: 200ms;
+    height: 35px;
+    box-sizing: border-box;
+    border: 0;
+    font-size: 12px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    background: $bcolor;
+}
+
+@mixin hoverFocus() {
+    outline: 0;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.05), 0 3px 8px 0 rgba(0, 0, 0, 0.05);
+}
+
+
+
+@mixin btnDisabled() {
+    filter: saturate(0.2) opacity(0.5);
+    -webkit-filter: saturate(0.2) opacity(0.5);
+    cursor: not-allowed;
+}
+
+
+@mixin hover-Btn() {
+    box-shadow: rgba(9, 9, 9, 0.2) 0 8px 15px;
+    transform: translateY(-2px);
+
+}
+
+
+
+button {
+    @include hoverBtn;
+    min-width: 80px;
+
+}
+
+
+.deploy-btn{
+  cursor:pointer
+}
+
+@mixin btn-active() {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+
+button:hover {
+    @include hover-Btn;
+    border-color: transparent!important; 
+}
+
+.deploy-btn:hover{
+    @include hover-Btn;
+
+}
+
+button:active {
+    @include btn-active
+}
+
+.deploy-btn:active{
+    @include btn-active
+}
+

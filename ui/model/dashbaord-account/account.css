@@ -1,0 +1,21 @@
+
+.account-detail{
+    display: flex;
+    height: 150px;
+    width: 350px;
+    border-radius: 5px;
+    border: 1px solid rgb(28, 47, 63);
+    flex-direction: column;
+    justify-content:flex-start;
+    color:white;
+    margin-top: 20px;
+    padding:10px;
+    gap: 10px;
+    font-size: 17px;
+}
+
+.account-address{
+    font-size:11px;
+    border-bottom:1px solid #42fcfc ;
+    padding-bottom:3px
+}

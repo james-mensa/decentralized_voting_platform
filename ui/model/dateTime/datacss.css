@@ -1,0 +1,69 @@
+
+.rs-calendar{
+    background-color:#07051a!important;
+    color:white
+}
+.rs-calendar-time-dropdown{
+    background-color:#07051a!important;
+    color:white
+}
+.rs-calendar-btn-close{
+    background-color:#07051a!important;
+    color:white
+}
+.rs-picker-toolbar{
+    background-color:#07051a!important;
+    color:white
+}
+.rs-btn{
+    color:white
+}
+
+.rs-input{
+   background-color:transparent !important;
+
+   height:40px;
+   border:1px solid rgb(92, 101, 107)!important;
+   font-weight: bold;
+   font-size: 13px;
+}
+.rs-input-group{
+    background-color:transparent !important;
+   color:white!important;
+   height:40px;
+   border-color:transparent!important;
+}
+.rs-input-group:focus-within{
+
+    outline: none!important;
+}
+.rs-input-group-inside{
+    background-color: transparent!important;
+    border-color:transparent!important;
+}
+.rs-picker-clean{
+   margin-top:5px;
+   border-radius:4px;
+   display:none!important;
+}
+
+
+.rs-input-group-addon{
+    display:none;
+}
+.rs-calendar-month-dropdown-row-wrapper{
+    background-color: #07051a!important;
+}
+.rs-calendar-time-dropdown-cell-active{
+    background-color: #1b1936!important;
+    border-radius:5px;
+   
+}
+.rs-calendar-time-dropdown-cell{
+    margin-top:5px;
+}
+.rs-calendar-time-dropdown-column-title{
+   background-color:#58576b!important;
+   margin-bottom:5px;
+   border-radius:2px; 
+}

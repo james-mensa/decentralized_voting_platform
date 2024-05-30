@@ -1,0 +1,40 @@
+
+
+@import "commonlayout";
+
+.page-layout{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    justify-content: space-between;
+    position: relative;
+
+}
+
+
+.stack-row{
+    @include rowItems;
+   
+
+}
+
+
+
+.stack-column{
+    @include ColumnItems;
+}
+
+
+.stack{
+    display: flex;
+  
+    width: 100%;
+
+}
+.main-layout{
+   @include ColumnItems;
+ 
+   min-height: 500px;
+   gap: 15px;
+}

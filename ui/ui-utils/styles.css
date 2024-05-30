@@ -1,0 +1,35 @@
+
+
+.popup-container{
+  display:none!important;
+    position:absolute;
+    margin-top:-40px;
+    width:150px;
+margin-left:-130px;
+
+flex-direction:column;
+justify-content:right;
+}
+
+
+.popup-main{
+  z-index: 5;
+  border-radius: 5px;
+  padding: 5px;
+
+}
+  .popup-arrow{
+width: 15px;
+height: 15px;
+transform: rotate(45deg);
+z-index: 4;
+margin-top:-18px;
+margin-right:4px;
+
+  }
+
+
+  .show-popup{
+    display: flex!important;
+
+  }
