@@ -8,6 +8,8 @@ import { Label,Typography } from '../labels-model';
 import { ActionButton } from '../Button';
 type paperStyleType = "outlined" | "primary" | "none"
 import {useColorMode } from "@chakra-ui/react"
+import { error } from '../../../theme/palette';
+import { Colors } from '@/theme/palette';
 type widthType="full" |"normal"
 interface inputProps {
     value?: string | number | readonly string[] | undefined,
@@ -22,7 +24,6 @@ interface inputProps {
     styeType?: paperStyleType
     borderColor?: string
     disabled?: boolean
-    className?: string,
     styles?: React.CSSProperties,
     bg?: string,
     height?: number
@@ -39,13 +40,12 @@ interface inputProps {
     errorMsg?: string
 }
 
-export const Input: React.FC<inputProps> = ({ error,errorMsg ,name,btn=false,btnLabel, btnOnClick,className, styles, value, placeholder, handleOnChange, max, min, elevation, styeType = "none",
+export const Input: React.FC<inputProps> = ({ error,errorMsg ,name,btn=false,btnLabel, btnOnClick, styles, value, placeholder, handleOnChange, max, min, elevation, styeType = "none",
     borderColor, disabled, bg, label,
     labelClassName,
     labelStyles,
     labelColor = grey[700], height = 35, type = "text", 
 width=300 }) => {
-    
     const { colorMode } = useColorMode();
 bg=bg ?? colorMode==="dark" ? grey[700]:  grey[300];
 borderColor=borderColor ?? colorMode==="dark" ? grey[600]:  grey[400];
@@ -76,10 +76,9 @@ labelColor=labelColor ?? colorMode==="dark"  ? grey[400]: grey[800];
     return (
         <Paper styeType='none'  >
        {label && <Typography styles={{ ...labelStyles, marginBottom: "4px" }} className={labelClassName} textColor={labelColor} fontSize={17}>{label}</Typography>}
+
 <div className='flex flex-row items-center gap-5'>
 <input
-
-className={className}
 style={{
     ...styles, ...InputCss(),
     backgroundColor: bg,
@@ -110,8 +109,14 @@ radius={5}
    {btnLabel}
  </ActionButton>}  
     </div>
-       
+    { error &&
+ <p
+style={{color:Colors.error.main,position:"absolute",fontSize:'12px'
+,marginLeft:"10px"
 
+ }}>* {errorMsg}</p>
+    }
+   
         </Paper>
 
     )

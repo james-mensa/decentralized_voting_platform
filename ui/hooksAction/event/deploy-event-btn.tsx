@@ -16,13 +16,13 @@ export function NewElectionButton({ params }: props) {
           const hookHandler = new Promise(async (resolve, reject) => {
            console.log({params})
 
-            const result = await createElection(params);
-            if (result) {
-              resolve(200);
-            }
-            else{
-              reject(400);
-            }
+          //  const result = await createElection(params);
+            // if (result) {
+            //   resolve(200);
+            // }
+            // else{
+            //   reject(400);
+            // }
             
             
           });

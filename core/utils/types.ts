@@ -13,7 +13,7 @@ export interface partyDBProps {
 export interface createNewEventProps {
   name: string;
   parties: partyProps[];
-  startDate: Date;
-  endDate: Date;
+  startDate: Date | null;
+  endDate: Date | null;
   logo?: string;
 }

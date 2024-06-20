@@ -19,8 +19,6 @@ export function maskMiddleCharacters({address, number=5}:addressProps) {
 
 
 
-
-
 export const AccountWallet = async ():Promise<AccountDetails> => {
     let signer = null;
     let provider;
@@ -116,14 +114,6 @@ export function convertDateToTimestamp(dateTime: Date) {
     return NameBytes;
   }
   
- 
-
-
-
-
-
-
-
 
   export function getParties(party: partyProps[]): partyDBProps[] {
     const parties = party.map((target) => {
@@ -132,3 +122,8 @@ export function convertDateToTimestamp(dateTime: Date) {
     return parties;
   }
   
+
+export function isValidEthereumAddress(address: string): boolean {
+  return ethers.isAddress(address);
+}
+

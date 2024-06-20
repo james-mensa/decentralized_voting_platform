@@ -1,30 +1,48 @@
-
-import { DatePicker, Stack } from 'rsuite';
-import 'rsuite/DatePicker/styles/index.css';
-import { FaArrowsAltH } from "react-icons/fa";
-import "./datacss.css"
-import { Typography} from "@/ui/model/labels-model";
-interface props{
-  setStartDate?:(value:Date | null)=>void,
-  setEndDate?:(value:Date | null)=>void
-
+import { DatePicker as DatePickerBase, Stack } from "rsuite";
+import "rsuite/DatePicker/styles/index.css";
+import "./datacss.css";
+import { Typography } from "@/ui/model/labels-model";
+import { Colors } from "@/theme/palette";
+import { Dispatch, SetStateAction } from "react";
+interface props {
+  onChangeHandler?:Dispatch<SetStateAction<{ value: Date | null; error?: boolean | undefined; }>>;
+  error?: boolean;
+  errorMessage?: string;
+  label?: string;
+  value?:Date | null;
 }
-const BasicDatePicker:React.FC<props>=({setStartDate,setEndDate})=> {
-
-
+const DatePicker: React.FC<props> = ({
+  label,
+  onChangeHandler,
+  error,
+  errorMessage,
+  value
+}) => {
   return (
-  <Stack direction='row' justifyContent='space-between' style={{ width:"86.5%"}}>
-    <Stack  direction="column" style={{alignItems:"flex-start"}}>
-      <Typography>Start Date time</Typography>
-      <DatePicker  onChange={setStartDate} className="datacss"  format="yyyy-MM-dd HH:mm:ss"  block appearance="subtle" style={{ width: 300}} />
-   
+    <Stack direction="column" style={{ alignItems: "flex-start" }}>
+      <Typography>{label}</Typography>
+      <DatePickerBase
+        onChange={(value)=>{onChangeHandler && onChangeHandler({value:value,error:true})}}
+        value={value}
+        className="datacss"
+        format="yyyy-MM-dd HH:mm:ss"
+        block
+        appearance="subtle"
+        style={{ width: 300 }}
+      />
+      {error && (
+        <p
+          style={{
+            color: Colors.error.main,
+            position: "absolute",
+            fontSize: "12px",
+            marginLeft: "10px",
+          }}
+        >
+          * {errorMessage}
+        </p>
+      )}
     </Stack>
-    <Stack direction="column" style={{alignItems:"flex-start"}}>
-      <Typography>End Date time</Typography>
-      <DatePicker onChange={setEndDate} format="yyyy-MM-dd HH:mm:ss" block appearance="subtle" style={{ width: 300 }} />
-    </Stack>
-   
-  </Stack>
   );
-}
-export default BasicDatePicker
+};
+export default DatePicker;
